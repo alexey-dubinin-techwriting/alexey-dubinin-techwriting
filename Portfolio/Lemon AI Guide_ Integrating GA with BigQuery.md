@@ -33,19 +33,21 @@ In this step, you create a Google Cloud project, which serves as the container f
 
 3. Enter a project name and click **Create**. The project appears in your project list.
 
-![1](Images/image1.png)
+![1](Images/LemonAI_image1.png)
+
+![2](Images/LemonAI_image2.png)
 
 ### **Enable the BigQuery API**
 
 1. In the left navigation menu, go to **APIs & Services** \> **Library**.
 
-![2](Images/image2.png)
+![3](Images/LemonAI_image3.png)
 
 2. Search for **BigQuery API** and select it from the results.
 
 3. Confirm that the status shows **API Enabled**. If not, click **Enable**.
 
-![3](Images/image3.png)
+![4](Images/LemonAI_image4.png)
 
 # **Step 2: Link Google Analytics to BigQuery**
 
@@ -53,15 +55,15 @@ In this step, you connect your Google Analytics property to the Google Cloud pro
 
 1. In your [Google Analytics account](https://analytics.google.com), click **Admin** (the gear icon in the bottom-left corner).
 
-![4](Images/image4.png)
+![5](Images/LemonAI_image5.png)
 
 2. In the **Property** column, under **Product Links**, click **BigQuery Links**.
 
-*![5](Images/image5.png)*
+![6](Images/LemonAI_image6.png)
 
 3. Click **Link**.
 
-*![6](Images/image6.png)*
+![7](Images/LemonAI_image7.png)
 
 4. Click **Choose a BigQuery project**. A list of projects you have access to appears.
 
@@ -69,7 +71,7 @@ In this step, you connect your Google Analytics property to the Google Cloud pro
 
 6. Select a **data location**. You can choose any location that suits your business needs. If you don't have a preference, select europe-central2.
 
-*![7](Images/image7.png)*
+![8](Images/LemonAI_image8.png)
 
 **Note:**  Remember the location you choose here — you'll need to use the same location when you create your Cloud Storage bucket in Step 3\.
 
@@ -89,7 +91,7 @@ In this step, you connect your Google Analytics property to the Google Cloud pro
 
 12. Review your settings and click **Submit**. The project now appears in the BigQuery Links section.
 
-*![8](Images/image8.png)*
+![9](Images/LemonAI_image9.png)
 
 # **Step 3: Configure the integration in Google Cloud**
 
@@ -107,7 +109,9 @@ In this step, you create a service account, generate credentials, set up a Cloud
 
 * **ID:** This is auto-populated from the name. You can't change it after creation.
 
-* **Description:** Describe the purpose of the account. For example: Google Analytics exports to Lemon AI.![9](Images/image9.png)
+* **Description:** Describe the purpose of the account. For example: Google Analytics exports to Lemon AI.
+
+![10](Images/LemonAI_image10.png)
 
 4. Click **Done**. The service account appears in the list.
 
@@ -119,21 +123,21 @@ In this step, you create a service account, generate credentials, set up a Cloud
 
 3. Click **Add key** \> **Create new key**.
 
-![10](Images/image10.png)
+![11](Images/LemonAI_image11.png)
 
 4. Select **JSON** as the key type and click **Create**. The key file downloads to your computer and also appears in the key list.
 
-![11](Images/image11.png)
+![12](Images/LemonAI_image12.png)
 
 ## **3c. Create a Cloud Storage bucket**
 
 **Before you begin:**  Your Google Cloud account must have a billing method on file before you can create a Cloud Storage bucket. To add one, go to **Billing** \> **Add billing account** in the left navigation menu, or follow the link in the billing section of the Console.
 
-![12](Images/image12.png)
+![13](Images/LemonAI_image13.png)
 
 1. In the left navigation menu, go to **Cloud Storage** \> **Buckets**.
 
-![13](Images/image13.png)
+![14](Images/LemonAI_image14.png)
 
 2. Click **Create**.
 
@@ -145,7 +149,7 @@ In this step, you create a service account, generate credentials, set up a Cloud
 
 4. Click **Create**.
 
-![14](Images/image14.png)
+![15](Images/LemonAI_image15.png)
 
 ## **3d. Create a Cloud Storage HMAC key**
 
@@ -153,17 +157,17 @@ In this step, you create a service account, generate credentials, set up a Cloud
 
 2. Click the **Interoperability** tab.
 
-![15](Images/image15.png)
+![16](Images/LemonAI_image16.png)
 
 3. Click **Create a key for another service account**.
 
 4. Select the service account you created in **section 3a**, then click **Create key**.
 
-![16](Images/image16.png)
+![17](Images/LemonAI_image17.png)
 
 5. Copy and save both the **Access key** and the **Secret**. You'll share these with the Lemon AI team later. **The secret is shown only once.**
 
-![17](Images/image17.png)
+![18](Images/LemonAI_image18.png)
 
 ## **3e. Grant IAM permissions**
 
@@ -171,9 +175,11 @@ In this step, you create a service account, generate credentials, set up a Cloud
 
 2. Click **Grant Access**.
 
+![19](Images/LemonAI_image19.png)
+
 3. In the **New principals** field, enter the email address of the service account you created in section 3a.
 
-![18](Images/image18.png)
+![20](Images/LemonAI_image20.png)
 
 4. Click **Add another role** and add the following three roles:
 
@@ -186,6 +192,8 @@ In this step, you create a service account, generate credentials, set up a Cloud
 **Tip — restrict Storage Object Admin to your bucket only:**  To limit **Storage Object Admin** to the bucket you created (instead of all buckets), click **Add IAM condition** after selecting the role. In the condition editor, set the **Resource name** to projects/\_/buckets/\<BUCKET\_NAME\>, replacing \<BUCKET\_NAME\> with your bucket name — for example, projects/\_/buckets/lemonai\_123.
 
 5. Click **Save**.
+
+![21](Images/LemonAI_image21.png)
 
 # **Step 4: Share credentials with Lemon AI**
 
@@ -209,8 +217,12 @@ The Dataset ID is created automatically by Google once the BigQuery link is acti
 
 1. In the Google Cloud Console, go to **BigQuery** \> **BigQuery Studio**.
 
+![22](Images/LemonAI_image22.png)
+
+
 2. In the left panel, locate your dataset — it appears at the top of the resource tree. The name follows the format analytics\_XXXXXXXXX, for example analytics\_1234567.  
-   ![19](Images/image19.png)
+
+![23](Images/LemonAI_image23.png)
 
 3. Share this Dataset ID with the Lemon AI team.
 
@@ -218,13 +230,15 @@ The Dataset ID is created automatically by Google once the BigQuery link is acti
 
 1. In your [Google Analytics account](https://analytics.google.com), click **Admin** (the gear icon in the bottom-left corner).
 
+![24](Images/LemonAI_image24.png)
+
 2. In the **Property** setting, under **Data Collection and Modification**, click **Data Streams**.
 
 3. Select your data stream from the list.
 
-4. The Measurement ID appears in the top-right corner of the stream details panel. It follows the format G-XXXXXXXXXX, for example G-ABCD1234.![20](Images/image20.png)
+4. The Measurement ID appears in the top-right corner of the stream details panel. It follows the format G-XXXXXXXXXX, for example G-ABCD1234.
 
-   
+![25](Images/LemonAI_image25.png)
 
 5. Share this Measurement ID with the Lemon AI team.
 
@@ -236,11 +250,15 @@ Complete this in the same Data Streams screen you used in Item 6\.
 
 1. In the Web stream details panel, click **Measurement Protocol API secrets**.
 
+![26](Images/LemonAI_image26.png)
+
 2. Click **Create**.
 
 3. Enter a nickname for the secret. You can use any name — for example, yourcompany\_MP.
 
-4. Click **Create**. The secret value appears in the centre of the screen, for example, 1a2b345cd.*![21](Images/image21.png)*
+4. Click **Create**. The secret value appears in the centre of the screen, for example, 1a2b345cd.
+
+![27](Images/LemonAI_image27.png)
 
 5. Share this API secret with the Lemon AI team.
 
