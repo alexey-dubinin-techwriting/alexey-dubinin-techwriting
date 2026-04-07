@@ -1,11 +1,11 @@
 
 # AstonMartin Trading Bot
 
-## Product Overview
+# Product Overview
 
 *Delta-neutral perpetual futures trading bot for simultaneous airdrop farming across two decentralized exchanges — Aster and Lighter*
 
-**Contents**
+## **Contents**
 
 [**Overview**](#overview)
 
