@@ -4,7 +4,7 @@
 
 *Blockchain-based fan engagement platform, enabling celebrities to launch branded apps, sell NFTs, and monetize their audience*
 
-**Contents**
+## **Contents**
 
 [**Overview**](#overview)
 
