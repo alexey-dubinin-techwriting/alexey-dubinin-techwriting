@@ -210,7 +210,7 @@ AstonMartin's interface consists of two views: the **market data panel**, which 
 
 The market data panel presents live data for Aster and Lighter side by side. It is the primary monitoring view.
 
-![Market data panel](Portfolio/Images/aston-martin-execution-panel.png)
+![Market data panel](Images/aston-martin-execution-panel.png)
 
 | Aster (left panel) | Lighter (right panel) |
 | :---- | :---- |
@@ -234,7 +234,7 @@ The order book displays live ask prices in red (above the spread line) and bid p
 
 The execution panel is where you configure and launch the strategy.
 
-![Execution panel][Portfolio/Images/aston-martin-execution-panel.png]
+![Execution panel](Images/aston-martin-execution-panel.png)
 
 ### Balance display
 
