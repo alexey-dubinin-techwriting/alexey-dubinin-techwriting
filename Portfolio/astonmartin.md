@@ -210,7 +210,7 @@ AstonMartin's interface consists of two views: the **market data panel**, which 
 
 The market data panel presents live data for Aster and Lighter side by side. It is the primary monitoring view.
 
-![Market data panel](Images/aston-martin-execution-panel.png)
+![Market data panel](Images/aston-martin-market-data-panel.png)
 
 | Aster (left panel) | Lighter (right panel) |
 | :---- | :---- |
