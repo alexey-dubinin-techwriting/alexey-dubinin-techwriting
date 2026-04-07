@@ -1,16 +1,32 @@
-## Hi there 👋
+# Alexey Dubinin — Technical Writer
 
-<!--
-**alexey-dubinin-techwriting/alexey-dubinin-techwriting** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I write documentation that makes complex products clear, accessible, and compelling.
 
-Here are some ideas to get you started:
+Background in linguistics, content, and localization across crypto, AI, and iGaming.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## Portfolio
+
+| Document | Product | Description |
+|---|---|---|
+| Product Guide | AstonMartin | Delta-neutral perpetual futures trading bot for simultaneous airdrop farming across two decentralized exchanges — Aster and Lighter |
+| Product Guide | YourBrandNFT | Blockchain-based fan engagement platform, enabling celebrities to launch branded apps, sell NFTs, and monetize their audience |
+| Integration Guide | Lemon AI | Deep learning SaaS for ad campaign optimization via proprietary models, integrated with Google Analytics and BigQuery |
+
+
+## Skills & Tools
+
+**Documentation**: Google Developer Style Guide | Markdown | Docusaurus | Docs-as-Code | Git | GitHub | XML | DITA | HTML | Google Docs 
+
+**Design & Diagramming**: Figma | Canva | Draw.io | Miro
+
+**AI**: Claude | Perplexity | Prompt Engineering
+
+**Workflow**: Confluence | Jira | Notion | Slack | Asana | Trello | WordPress
+
+## Languages
+
+English (C2/Fluent) | Russian (Native) | Portuguese (B2) | German (B2) | French (B2)
+
+## Contact
+
+[LinkedIn](https://www.linkedin.com/in/alexeydubinin/) · alexthedub@gmail.com
