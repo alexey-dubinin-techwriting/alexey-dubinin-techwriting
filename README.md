@@ -1,4 +1,4 @@
-# Alexey Dubinin — Technical Writer
+# Alexey Dubinin. Technical Writer
 
 I write documentation that makes complex products clear, accessible, and compelling.
 
@@ -28,6 +28,6 @@ Background in linguistics, content, and localization across crypto, AI, and iGam
 
 English (C2/Fluent) | Russian (Native) | Portuguese (B2) | German (B2) | French (B2)
 
-## Contact
+## Contacts
 
 [LinkedIn](https://www.linkedin.com/in/alexeydubinin/) · alexthedub@gmail.com
