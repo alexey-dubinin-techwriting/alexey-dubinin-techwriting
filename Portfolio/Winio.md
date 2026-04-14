@@ -4,7 +4,7 @@
 
 ## Product overview
 
-### *ML architecture, data sources, infrastructure, and security*
+*ML architecture, data sources, infrastructure, and security*
 
 # Contents
 
