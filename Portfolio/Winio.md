@@ -1,10 +1,10 @@
 
-**Winio**  
-**Esports Analytics Platform** 
+# **Winio**  
+## **Esports Analytics Platform** 
 
-Product overview
+### Product overview
 
-ML architecture, data sources, infrastructure, and security
+### *ML architecture, data sources, infrastructure, and security*
 
 # Contents
 
