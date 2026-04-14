@@ -1,6 +1,6 @@
-# YourBrandNFT Playbook
+# YourBrandNFT
 
-## Product Overview
+## Product Guide
 
 *Blockchain-based fan engagement platform, enabling celebrities to launch branded apps, sell NFTs, and monetize their audience*
 
